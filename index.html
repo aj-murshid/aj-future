@@ -60,11 +60,12 @@
       }
     </style>
   </head>
-  <body class="bg-gray-900 text-gray-300 font-sans">
+  <body class="bg-white text-gray-900 font-sans">
     <!-- Header -->
-    <header class="bg-gray-800 py-4 fixed w-full z-10">
+    <header
+      class="bg-white bg-opacity-75 backdrop-blur-lg py-4 fixed w-full z-10"
+    >
       <div class="container mx-auto px-4 flex justify-between items-center">
-        <!-- <h1 class="text-2xl font-bold text-white">AJ Future</h1> -->
         <img
           src="src/images/aj-future-logo.png"
           alt="AJ Future Logo"
@@ -73,18 +74,18 @@
         <nav>
           <ul class="hidden md:flex space-x-6">
             <li>
-              <a href="#services" class="hover:text-blue-400">Services</a>
+              <a href="#services" class="hover:text-blue-500">Services</a>
             </li>
-            <li><a href="#product" class="hover:text-blue-400">Product</a></li>
+            <li><a href="#product" class="hover:text-blue-500">Product</a></li>
             <li>
-              <a href="#testimonials" class="hover:text-blue-400"
+              <a href="#testimonials" class="hover:text-blue-500"
                 >Testimonials</a
               >
             </li>
-            <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
           </ul>
           <div class="md:hidden">
-            <button id="menu-button" class="text-white focus:outline-none">
+            <button id="menu-button" class="text-gray-900 focus:outline-none">
               <svg
                 class="w-6 h-6"
                 fill="none"
@@ -106,22 +107,22 @@
       <div id="mobile-menu" class="md:hidden hidden">
         <ul class="space-y-4 text-center">
           <li>
-            <a href="#services" class="block py-2 hover:text-blue-400"
+            <a href="#services" class="block py-2 hover:text-blue-500"
               >Services</a
             >
           </li>
           <li>
-            <a href="#product" class="block py-2 hover:text-blue-400"
+            <a href="#product" class="block py-2 hover:text-blue-500"
               >Product</a
             >
           </li>
           <li>
-            <a href="#testimonials" class="block py-2 hover:text-blue-400"
+            <a href="#testimonials" class="block py-2 hover:text-blue-500"
               >Testimonials</a
             >
           </li>
           <li>
-            <a href="#contact" class="block py-2 hover:text-blue-400"
+            <a href="#contact" class="block py-2 hover:text-blue-500"
               >Contact</a
             >
           </li>
@@ -131,13 +132,17 @@
 
     <!-- Hero Section -->
     <section
-      class="bg-gray-900 text-center h-screen flex items-center justify-center"
+      id="hero"
+      class="bg-gray-100 text-center h-screen flex items-center justify-center"
     >
       <div class="container mx-auto px-4 fade-in">
-        <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+        <h2
+          class="text-4xl md:text-5xl font-bold text-gray-900 mb-6"
+          id="hero-title"
+        >
           Welcome to the Future of Development
         </h2>
-        <p class="text-lg md:text-xl mb-8">
+        <p class="text-lg md:text-xl mb-8" id="hero-subtitle">
           Innovative Solutions for a Digital World
         </p>
         <a
@@ -151,18 +156,18 @@
     <!-- Services Section -->
     <section
       id="services"
-      class="bg-gray-800 h-screen flex items-center justify-center"
+      class="bg-white h-screen flex items-center justify-center"
     >
       <div class="container mx-auto text-center px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           Our Services
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div
-            class="p-6 bg-gray-700 rounded-lg service-card"
+            class="p-6 bg-gray-100 rounded-lg service-card"
             data-animation="slide-in-left"
           >
-            <h3 class="text-xl font-semibold text-white mb-4">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
               Software Development
             </h3>
             <p>
@@ -171,10 +176,10 @@
             </p>
           </div>
           <div
-            class="p-6 bg-gray-700 rounded-lg service-card"
+            class="p-6 bg-gray-100 rounded-lg service-card"
             data-animation="slide-in-right"
           >
-            <h3 class="text-xl font-semibold text-white mb-4">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
               Web Development
             </h3>
             <p>
@@ -183,10 +188,10 @@
             </p>
           </div>
           <div
-            class="p-6 bg-gray-700 rounded-lg service-card"
+            class="p-6 bg-gray-100 rounded-lg service-card"
             data-animation="slide-in-left"
           >
-            <h3 class="text-xl font-semibold text-white mb-4">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
               Mobile App Development
             </h3>
             <p>
@@ -195,10 +200,10 @@
             </p>
           </div>
           <div
-            class="p-6 bg-gray-700 rounded-lg service-card"
+            class="p-6 bg-gray-100 rounded-lg service-card"
             data-animation="slide-in-right"
           >
-            <h3 class="text-xl font-semibold text-white mb-4">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
               Digital Marketing
             </h3>
             <p>
@@ -213,13 +218,13 @@
     <!-- Product Section -->
     <section
       id="product"
-      class="bg-gray-900 h-screen flex items-center justify-center"
+      class="bg-gray-100 h-screen flex items-center justify-center"
     >
       <div class="container mx-auto text-center px-4 fade-in">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           Introducing Contractor Wallet
         </h2>
-        <div class="max-w-lg mx-auto bg-gray-800 rounded-lg p-6">
+        <div class="max-w-lg mx-auto bg-white rounded-lg p-6 shadow-lg">
           <img
             src="src/images/Dashboard.webp"
             alt="Contractor Wallet"
@@ -241,37 +246,37 @@
     <!-- Testimonials Section -->
     <section
       id="testimonials"
-      class="bg-gray-800 h-screen flex items-center justify-center"
+      class="bg-white h-screen flex items-center justify-center"
     >
       <div class="container mx-auto text-center px-4 fade-in">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           What Our Clients Say
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="p-6 bg-gray-700 rounded-lg">
+          <div class="p-6 bg-gray-100 rounded-lg">
             <p class="italic">
               "AJ Future's software development services have transformed our
               business operations. Highly recommended!"
             </p>
-            <h4 class="mt-4 font-semibold text-white">
+            <h4 class="mt-4 font-semibold text-gray-900">
               - Jabir, CEO of Tashkent Developers
             </h4>
           </div>
-          <div class="p-6 bg-gray-700 rounded-lg">
+          <div class="p-6 bg-gray-100 rounded-lg">
             <p class="italic">
               "Their mobile app development team delivered a top-notch product
               that our users love."
             </p>
-            <h4 class="mt-4 font-semibold text-white">
+            <h4 class="mt-4 font-semibold text-gray-900">
               - Ahsaf, Product Manager at ATAAT Technology
             </h4>
           </div>
-          <div class="p-6 bg-gray-700 rounded-lg">
+          <div class="p-6 bg-gray-100 rounded-lg">
             <p class="italic">
               "Contractor Wallet has revolutionized how we manage our
               construction projects. It's a game-changer!"
             </p>
-            <h4 class="mt-4 font-semibold text-white">
+            <h4 class="mt-4 font-semibold text-gray-900">
               - Afsal, CEO of Nedungat Constructions
             </h4>
           </div>
@@ -282,17 +287,17 @@
     <!-- Contact Section -->
     <section
       id="contact"
-      class="bg-gray-900 h-screen flex items-center justify-center text-center"
+      class="bg-gray-100 h-screen flex items-center justify-center text-center"
     >
       <div class="container mx-auto px-4 fade-in">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
           Get in Touch
         </h2>
         <p class="text-lg md:text-xl mb-6">
           Ready to start your project with us? Contact our team today!
         </p>
         <a
-          href="mailto:info@ajfuture.com"
+          href="mailto:info@ajfuture.in"
           class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600"
           >Email Us</a
         >
@@ -300,7 +305,7 @@
     </section>
 
     <!-- Enhanced Footer -->
-    <footer class="bg-gray-800 py-20">
+    <footer class="bg-white py-20 border-t">
       <div class="container mx-auto px-4 text-center md:text-left">
         <div class="flex flex-col md:flex-row md:justify-between">
           <!-- Company Info -->
@@ -310,46 +315,43 @@
               alt="AJ Future Logo"
               class="h-12 mb-4 mx-auto md:mx-0"
             />
-            <p class="text-gray-400">
+            <p class="text-gray-500">
               3/43/B, Kunnath House<br />Edayur North, Malappuram <br />Kerala -
               676552<br />info@ajfuture.in
             </p>
           </div>
           <!-- Quick Links -->
           <div>
-            <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Quick Links
+            </h3>
             <ul>
               <li class="mb-2">
-                <a href="#services" class="hover:text-blue-400">Services</a>
+                <a href="#services" class="hover:text-blue-500">Services</a>
               </li>
               <li class="mb-2">
-                <a href="#product" class="hover:text-blue-400">Product</a>
+                <a href="#product" class="hover:text-blue-500">Product</a>
               </li>
               <li class="mb-2">
-                <a href="#testimonials" class="hover:text-blue-400"
+                <a href="#testimonials" class="hover:text-blue-500"
                   >Testimonials</a
                 >
               </li>
               <li class="mb-2">
-                <a href="#contact" class="hover:text-blue-400">Contact</a>
+                <a href="#contact" class="hover:text-blue-500">Contact</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="mt-12 text-gray-400 text-center md:text-left">
+        <div class="mt-12 text-gray-500 text-center md:text-left">
           &copy; 2024 AJ Future Development. All rights reserved.
         </div>
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js"></script>
+
     <script>
-      // const menuButton = document.getElementById('menu-button');
-      // const mobileMenu = document.getElementById('mobile-menu');
-
-      // menuButton.addEventListener('click', () => {
-      //     mobileMenu.classList.toggle('hidden');
-      // });
-
       document.addEventListener("DOMContentLoaded", () => {
         const menuButton = document.getElementById("menu-button");
         const mobileMenu = document.getElementById("mobile-menu");
@@ -367,7 +369,7 @@
         });
       });
 
-      // Detect when the hero section is in view
+      // Detect when sections are in view
       document.addEventListener("DOMContentLoaded", () => {
         const observer = new IntersectionObserver(
           (entries) => {
@@ -382,11 +384,13 @@
           }
         );
 
-        observer.observe(document.getElementById("hero"));
-        observer.observe(document.getElementById("services"));
-        observer.observe(document.getElementById("product"));
-        observer.observe(document.getElementById("testimonials"));
-        observer.observe(document.getElementById("contact"));
+        document
+          .querySelectorAll(
+            "#hero, #services, #product, #testimonials, #contact"
+          )
+          .forEach((section) => {
+            observer.observe(section);
+          });
       });
 
       document.addEventListener("DOMContentLoaded", () => {
@@ -406,6 +410,25 @@
         document.querySelectorAll(".service-card").forEach((card) => {
           observer.observe(card);
         });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const title = document.getElementById("hero-title");
+        const subtitle = document.getElementById("hero-subtitle");
+
+        new Typewriter(title, {
+          loop: false,
+          delay: 50,
+        })
+          .typeString("Welcome to the Future of Development")
+          .start();
+
+        new Typewriter(subtitle, {
+          loop: false,
+          delay: 50,
+        })
+          .typeString("Innovative Solutions for a Digital World")
+          .start();
       });
     </script>
   </body>
